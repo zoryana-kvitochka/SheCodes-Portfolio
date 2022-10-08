@@ -4,6 +4,10 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+body {
+  width: 100% !important;
+}
+
 h1,
 h2,
 h3 {
@@ -88,4 +92,16 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 475px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  body {
+    min-width: 480px;
+  }
 }
