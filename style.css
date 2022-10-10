@@ -122,12 +122,32 @@ footer a:hover {
 
 @media (max-width: 475px) {
   h1 {
-    font-size: 60px;
+    font-size: 60px !important;
   }
   h2 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   body {
-    min-width: 480px;
+    min-width: 135% !important;
+    background: rgb(237, 237, 237);
+    background: linear-gradient(
+      to bottom,
+      rgba(216, 217, 207, 1) 21%,
+      rgba(246, 246, 246, 0.68) 50%,
+      rgba(255, 255, 255, 0.4) 100%
+    );
+  }
+  .carousel-container img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(216, 217, 207, 1) 150%,
+      rgba(237, 237, 237, 0.4) 0%
+    );
   }
 }
