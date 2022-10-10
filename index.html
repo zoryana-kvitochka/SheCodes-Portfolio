@@ -17,17 +17,25 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-
+    <script
+      src="https://kit.fontawesome.com/204c7b1812.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&family=Qwigley&display=swap");
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
+    <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Stanislava Dudchenko</a>
+        <a class="navbar-brand" href="index.html"
+          ><i class="fa-solid fa-wand-sparkles"></i
+        ></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,101 +58,115 @@
               <a class="nav-link" href="about.html">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact me</a>
+              <a class="nav-link" href="work.html">My work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Reach out!</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <h2>👋 Hi I am</h2>
-    <h1>
-      Stanislava <br />
-      Dudchenko
-    </h1>
-    <h3>🇺🇦 Front-end developer, based in Kyiv, Ukraine</h3>
-    <div class="navigation-links mb-5">
-      <a href="about.html#contact" class="contact-link">Contact me</a>
-      <a href="about.html" class="about-link">About me</a>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <img
-            src="images/mixologyapp.png"
-            alt="mixology website"
-            class="img-fluid rounded"
-          />
-        </div>
-        <div class="col-sm-6">
-          <h2 class="mb-3">Mixology App</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-            aperiam provident tempora? Cumque adipisci, non dolorem quia, odit
-            qui alias veniam excepturi rem dolor fugit dignissimos, sed
-            voluptatum blanditiis harum.
-          </p>
-          <div class="mt-5">
-            <a
-              href="https://www.shecodes.io/workshops/shecodes-basics-65b0fa59-234a-4d61-bb1b-d5cb47061966/projects/1046528"
-              class="project-link"
-              target="_blank"
-              >Launch Mixology App</a
-            >
-          </div>
-        </div>
+    <header>
+      <h2>👋 Hi! I am</h2>
+      <h1>Stanislava Dudchenko</h1>
+      <h3>Aspiring front-end developer, based in Kyiv, Ukraine 🇺🇦</h3>
+      <div class="navigation-links mb-5">
+        <a href="index.html#contact" class="btn">Reach out!</a>
+        <a href="about.html" class="btn">About me</a>
+        <a href="work.html" class="btn">My work</a>
       </div>
-      <div class="row mt-5">
-        <div class="col-sm-6">
-          <h2 class="mb-3">Weather App</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-            aperiam provident tempora? Cumque adipisci, non dolorem quia, odit
-            qui alias veniam excepturi rem dolor fugit dignissimos, sed
-            voluptatum blanditiis harum.
-          </p>
-          <div class="mt-5 mb-5">
-            <a
-              href="https://teal-gumption-95197c.netlify.app"
-              class="project-link"
-              target="_blank"
-              >Launch Weather App</a
-            >
+    </header>
+    <h2 class="index-main">Projects overview</h2>
+    <div class="carousel-container">
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="images/mixologyapp.png"
+              class="d-block w-60 rounded"
+              alt="mixology website"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="images/weatherapp.png"
+              class="d-block w-60 rounded"
+              alt="weather app"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/farmapp.png"
+              class="d-block w-60 rounded"
+              alt="Spice farm website"
+            />
           </div>
         </div>
-        <div class="col-sm-6">
-          <img
-            src="images/weatherapp.png"
-            alt="weather website"
-            class="img-fluid rounded"
-          />
-        </div>
-      </div>
-      <div class="row mt-5 mb-5">
-        <div class="col-sm-6">
-          <img
-            src="images/farmapp.png"
-            alt="farm website"
-            class="img-fluid rounded"
-          />
-        </div>
-        <div class="col-sm-6">
-          <h2 class="mb-3">Spice Farm App</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-            aperiam provident tempora? Cumque adipisci, non dolorem quia, odit
-            qui alias veniam excepturi rem dolor fugit dignissimos, sed
-            voluptatum blanditiis harum.
-          </p>
-          <div class="mt-5">
-            <a
-              href="http://www.butterfly-spice-farm.com/"
-              class="project-link"
-              target="_blank"
-              >Launch Spice Farm App</a
-            >
-          </div>
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
+    <footer>
+      <h2>Let's connect!</h2>
+      <div id="contact">
+        <a href="mailto:stanislava.moskalets@gmail.com" class="mx-3"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/stanislava-dudchenko-8a518a125/"
+          class="mx-3"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://t.me/zoryana_kvitochka" class="mx-3"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+        <a href="https://github.com/zoryana-kvitochka" class="mx-3"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>

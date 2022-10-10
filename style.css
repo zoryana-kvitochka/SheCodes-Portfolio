@@ -1,13 +1,21 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #e26868;
+  --secondary-color: #ff8787;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --bg-primary-color: rgba(216, 217, 207, 1);
 }
 
 body {
   width: 100% !important;
+  background: rgb(237, 237, 237);
+  background: linear-gradient(
+    to bottom,
+    rgba(216, 217, 207, 1) 21%,
+    rgba(246, 246, 246, 0.68) 35%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  background-repeat: no-repeat;
 }
-
 h1,
 h2,
 h3 {
@@ -17,10 +25,13 @@ h3 {
 
 h1 {
   font-size: 96px !important;
+  font-family: "Qwigley", cursive;
 }
 
 h2 {
   font-size: 48px !important;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
 }
 
 .col-md-6 h2 {
@@ -30,8 +41,14 @@ h2 {
 h3 {
   font-size: 24px !important;
   opacity: 0.7;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
 }
-
+.navbar {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  background-color: var(--bg-primary-color);
+}
 p {
   font-size: 18px;
   line-height: 1.5;
@@ -53,23 +70,14 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-
-.contact-link {
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: #ededed;
 }
-
-.about-link {
+.navigation-links a:hover {
+  border-color: var(--primary-color);
+  cursor: pointer;
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
 }
 .project-link {
   background: var(--primary-color);
@@ -81,17 +89,35 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }
-
-.email-link {
+.index-main {
+  margin: 50px;
+}
+.carousel-container {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
 }
-
-.email-link:hover {
-  text-decoration: underline;
+footer {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(216, 217, 207, 1) 110%,
+    rgba(237, 237, 237, 0.4) 0%
+  );
+  padding-top: 50px;
+  text-align: center;
+  margin-top: 100px;
+}
+footer h2 {
+  font-family: "Qwigley", cursive;
+  text-align: left;
+  padding-left: 50px;
+}
+footer a {
+  color: var(--primary-color);
+  font-size: 48px;
+}
+footer a:hover {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 475px) {
