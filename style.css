@@ -121,6 +121,58 @@ p {
   text-align: center;
   padding: 30px;
 }
+.reach-out {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.reach-out h3 {
+  text-align: left;
+}
+.reach-out a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+.reach-out a:hover {
+  color: var(--secondary-color);
+}
+ul {
+  text-align: left;
+  list-style-type: none;
+  margin-left: 50px;
+}
+li {
+  padding: 15px;
+}
+.inquiry {
+  background-color: rgba(205, 202, 202, 0.3);
+  box-shadow: var(--box-shadow);
+  border-radius: 4px;
+  margin: 30px;
+  max-width: 60%;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Nunito", sans-serif;
+  padding: 50px;
+}
+.inquiry a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 15px 15px;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: #ededed;
+}
+.inquiry a:hover {
+  border-color: var(--primary-color);
+  cursor: pointer;
+  color: var(--primary-color);
+}
 footer {
   background: linear-gradient(
     to bottom,
@@ -146,6 +198,12 @@ footer a:hover {
 }
 .mh80 {
   max-height: 79px !important;
+}
+small {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 10px !important;
 }
 @media (max-width: 475px) {
   h1 {
