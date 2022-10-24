@@ -168,7 +168,8 @@ li {
   box-shadow: var(--box-shadow);
   color: #ededed;
 }
-.inquiry a:hover {
+.inquiry,
+.project-link a:hover {
   border-color: var(--primary-color);
   cursor: pointer;
   color: var(--primary-color);
