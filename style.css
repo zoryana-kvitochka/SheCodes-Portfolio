@@ -82,13 +82,20 @@ p {
   color: var(--primary-color);
 }
 .project-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
   margin: 20px;
   border-radius: 4px;
-  padding: 20px 15px;
+  padding: 15px 15px;
   text-decoration: none;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: #ededed;
+}
+.project-link:hover {
+  border-color: var(--primary-color);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: var(--box-shadow);
 }
 .index-main {
   margin: 50px;
